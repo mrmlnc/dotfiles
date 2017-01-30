@@ -1,0 +1,59 @@
+{
+	// Editor configuration
+	"editor.fontFamily": "consolas",
+	"editor.fontSize": 18,
+	"editor.lineHeight": 32,
+	"editor.glyphMargin": true,
+	"editor.formatOnType": true,
+	"editor.renderWhitespace": "all",
+	"editor.rulers": [
+		80,
+		100
+	],
+
+	// Explorer configuration
+	"explorer.autoReveal": false,
+
+	// Git configuration
+	"git.enabled": false,
+
+	// Files configuration
+	"files.eol": "\n",
+	"files.exclude": {
+		"**/.git": true,
+		"**/.DS_Store": true,
+		"**/node_modules": true
+	},
+	"files.watcherExclude": {
+		"**/.git/objects/**": true,
+		"**/node_modules": true
+	},
+	"files.hotExit": false,
+
+	// HTML configuration
+	"html.format.indentInnerHtml": true,
+	"html.format.indentHandlebars": true,
+	"html.format.endWithNewline": true,
+
+	// Less configuration
+	"less.lint.duplicateProperties": "warning",
+	"less.lint.zeroUnits": "error",
+	"less.lint.idSelector": "error",
+
+	// Sass configuration
+	"scss.lint.duplicateProperties": "warning",
+	"scss.lint.zeroUnits": "error",
+	"scss.lint.idSelector": "error",
+
+	// JavaScript configuration
+	"javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+
+	// TypeScript configuration
+	"typescript.disableAutomaticTypeAcquisition": true,
+	"typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+
+	// PHP configuration
+	"php.validate.enable": false
+}

@@ -1,0 +1,57 @@
+[user]
+	name = mrmlnc
+	email = mrmlnc@mrmlnc.com
+
+[core]
+	editor = code --wait
+	autocrlf = input
+
+[help]
+	autocorrect = 1
+
+[alias]
+	st = status -sb
+	co = checkout
+	cob = checkout -b
+	cp = cherry-pick
+	ci = commit
+	up = pull
+	di = diff
+	br = branch
+
+	tags = tag -l
+	branches = branch -a
+	remotes = remote -v
+
+	save = !git add -A && git commit -m "SAVEPOINT"
+	wip = !git add -u && git commit -m "WIP"
+	undo = reset HEAD~1 --soft
+
+	# Pretty log for current branch
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+
+	# Pretty log for all branches
+	hist = log --pretty=format:'%C(yellow)%h%C(reset) %ad | %C(75)%s%C(reset) %C(yellow)%d%C(reset) [%an]' --graph --date=short --branches --all
+
+	# Get hash of latest commit
+	hash = show -s --format=%H
+
+[color]
+	ui = auto
+	interactive = auto
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "diff"]
+	meta = yellow
+	frag = magenta
+	old = red
+	new = green
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
