@@ -16,8 +16,10 @@ CONFIGS=(
 	".bash_aliases" \
 	".bash_functions" \
 	".bash_profile" \
+	".bash_powerline" \
 	".editorconfig" \
 	".gitconfig" \
+	".gitignore" \
 	".inputrc"
 )
 
