@@ -18,3 +18,6 @@ alias ll='ls -l'
 
 # Always enable colored `grep` output
 alias grep='grep --color=auto'
+
+# Applications
+alias site="open -a safari $1"
