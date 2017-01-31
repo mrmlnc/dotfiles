@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Colors
-source ./colors.sh
+source $BASEDIR/colors.sh
 
 EXTENSIONS=(
 	"CoenraadS.bracket-pair-colorizer" \

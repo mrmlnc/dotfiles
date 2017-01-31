@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
+# Base dir for running script
+BASEDIR="$(dirname $0)"
+
 # Colors
-source ./colors.sh
+source $BASEDIR/colors.sh
 
 echo
 echo "${YELLOW}==========================="
@@ -10,7 +13,7 @@ echo "===========================${NC}"
 echo
 
 echo "${YELLOW}Configuring brew...${NC}"
-source ./brew.sh
+source $BASEDIR/brew.sh
 
 CONFIGS=(
 	".bash_aliases" \
@@ -50,7 +53,7 @@ GIT_EMAIL=${GIT_EMAIL:-$CURRENT_GIT_EMAIL}
 echo
 echo "${YELLOW}Copying configs...${NC}"
 for file in ${CONFIGS[@]}; do
-	cp ./$file ~/$file
+	cp $BASEDIR/$file ~/$file
 
 	if [ $? -eq 0 ]; then
 		echo "~/$file (${GREEN}copied${NC})"
@@ -64,7 +67,7 @@ git config --global user.email "$GIT_EMAIL"
 echo
 echo "${YELLOW}Configuring VS Code...${NC}"
 for file in {locale,settings,keybindings}.json; do
-	cp ./.vscode/$file ~/Library/Application\ Support/Code/User/$file
+	cp $BASEDIR/.vscode/$file ~/Library/Application\ Support/Code/User/$file
 
 	if [ $? -eq 0 ]; then
 		echo ".vscode/$file (${GREEN}copied${NC})"
@@ -73,7 +76,7 @@ done
 unset file
 
 # Install VS Code extensions
-source ./vscode_extensions.sh
+source $BASEDIR/vscode_extensions.sh
 
 # Reload Bash profile
 source ~/.bash_profile
