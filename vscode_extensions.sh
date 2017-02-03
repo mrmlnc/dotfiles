@@ -16,6 +16,7 @@ EXTENSIONS=(
 	"progre.promise-snippets" \
 	"donjayamanne.python" \
 	"eg2.tslint" \
+	"mkxml.vscode-filesize" \
 	"mrmlnc.vscode-duplicate" \
 	"mrmlnc.vscode-lebab"
 )
