@@ -1,62 +1,122 @@
 {
-	// Editor configuration
-	"editor.fontFamily": "consolas",
-	"editor.fontSize": 18,
-	"editor.lineHeight": 32,
-	"editor.glyphMargin": true,
-	"editor.formatOnType": true,
-	"editor.renderWhitespace": "all",
-	"editor.codeLens": true,
-	"editor.snippetSuggestions": "inline",
-	"editor.rulers": [
-		80,
-		100
-	],
+    // Editor settings
+    "editor.fontFamily": "Consolas",
+    "editor.fontSize": 16,
+    "editor.lineHeight": 30,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "editor.snippetSuggestions": "inline",
+    "editor.cursorBlinking": "phase",
+    "editor.cursorStyle": "underline",
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+    "editor.renderIndentGuides": true,
+    "editor.renderLineHighlight": "all",
+    "editor.stablePeek": false,
 
-	// Explorer configuration
-	"explorer.autoReveal": false,
+    // Workbench settings
+    "workbench.editor.swipeToNavigate": true,
+    "workbench.welcome.enabled": true,
+    "workbench.iconTheme": "vs-nomo-dark",
+    "workbench.experimental.colorCustomizations": {
+        "statusBarBackground": "#466991"
+    },
 
-	// Git configuration
-	"git.enabled": false,
+    // Window settings
+    "window.newWindowDimensions": "inherit",
 
-	// Files configuration
-	"files.eol": "\n",
-	"files.exclude": {
-		"**/.git": true,
-		"**/.DS_Store": true,
-		"**/node_modules": true
-	},
-	"files.watcherExclude": {
-		"**/.git/objects/**": true,
-		"**/node_modules": true
-	},
-	"files.hotExit": "off",
+    // Files settings
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true
+    },
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.hotExit": "off",
 
-	// HTML configuration
-	"html.format.indentInnerHtml": true,
-	"html.format.indentHandlebars": true,
-	"html.format.endWithNewline": true,
+    // File Explorer settings
+    "explorer.autoReveal": false,
 
-	// Less configuration
-	"less.lint.duplicateProperties": "warning",
-	"less.lint.zeroUnits": "error",
-	"less.lint.idSelector": "error",
+    // CSS settings
+    "css.colorDecorators.enable": false,
+    "css.lint.duplicateProperties": "warning",
+    "css.lint.zeroUnits": "error",
+    "css.lint.idSelector": "error",
 
-	// Sass configuration
-	"scss.lint.duplicateProperties": "warning",
-	"scss.lint.zeroUnits": "error",
-	"scss.lint.idSelector": "error",
+    // SCSS settings
+    "scss.colorDecorators.enable": false,
+    "scss.lint.duplicateProperties": "warning",
+    "scss.lint.zeroUnits": "error",
+    "scss.lint.idSelector": "error",
 
-	// JavaScript configuration
-	"javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
-	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+    // Less settings
+    "less.colorDecorators.enable": false,
+    "less.lint.duplicateProperties": "warning",
+    "less.lint.zeroUnits": "error",
+    "less.lint.idSelector": "error",
 
-	// TypeScript configuration
-	"typescript.disableAutomaticTypeAcquisition": true,
-	"typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
-	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
-	"typescript.referencesCodeLens.enabled": true,
+    // HTML setting
+    "html.format.wrapLineLength": 0,
+    "html.format.indentInnerHtml": true,
+    "html.format.maxPreserveNewLines": 1,
+    "html.format.endWithNewline": true,
+    "html.suggest.angular1": false,
+    "html.suggest.ionic": false,
 
-	// PHP configuration
-	"php.validate.enable": false
+    // JSON settings
+    "json.colorDecorators.enable": false,
+
+    // PHP settings
+    "php.suggest.basic": false,
+    "php.validate.enable": false,
+
+    // TypeScript settings
+    "typescript.disableAutomaticTypeAcquisition": true,
+    "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+
+    // JavaScript settings
+    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+
+    // Terminal settings
+    "terminal.external.osxExec": "iTerm.app",
+
+    // Intergated Terminal settings
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.lineHeight": 1.8,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.scrollback": 10000,
+
+    // Default Configuration Overrides settings
+    "[markdown]": {
+        "editor.wordWrapColumn": 120,
+        "editor.wordWrap": "wordWrapColumn"
+    },
+    "[python]": {
+        "editor.detectIndentation": false
+    },
+
+    // Git
+    "git.enabled": false,
+
+    // Gulp settings
+    "gulp.autoDetect": "off",
+
+    // Extensions settings
+    "python.autoComplete.extraPaths": [
+        "/Users/mrmlnc/Documents/Sandbox/sandbox"
+    ],
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true
 }
