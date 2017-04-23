@@ -2,5 +2,15 @@
 	{
 		"key": "tab",
 		"command": "-acceptSelectedSuggestion"
+	},
+	{
+		"key": "alt+space",
+		"command": "editor.action.triggerSuggest",
+		"when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+space",
+		"command": "toggleSuggestionDetails",
+		"when": "editorTextFocus && suggestWidgetVisible"
 	}
 ]
