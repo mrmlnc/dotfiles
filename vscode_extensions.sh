@@ -6,7 +6,6 @@ source $BASEDIR/colors.sh
 EXTENSIONS=(
 	"CoenraadS.bracket-pair-colorizer" \
 	"PeterJausovec.vscode-docker" \
-	"joelday.docthis" \
 	"EditorConfig.EditorConfig" \
 	"dbaeumer.vscode-eslint" \
 	"oderwat.indent-rainbow" \
@@ -17,8 +16,7 @@ EXTENSIONS=(
 	"donjayamanne.python" \
 	"eg2.tslint" \
 	"mkxml.vscode-filesize" \
-	"mrmlnc.vscode-duplicate" \
-	"mrmlnc.vscode-lebab"
+	"mrmlnc.vscode-duplicate"
 )
 
 echo
