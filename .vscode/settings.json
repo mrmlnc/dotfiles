@@ -41,6 +41,9 @@
         "**/.DS_Store": true,
         "**/node_modules": true
     },
+    "files.associations": {
+        "*.log": "log"
+    },
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "files.hotExit": "off",
@@ -118,5 +121,6 @@
         "/Users/mrmlnc/Documents/Sandbox/sandbox"
     ],
     "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true
+    "python.linting.flake8Enabled": true,
+    "eslint.nodePath": "./node_modules/serp-ci"
 }
