@@ -1,126 +1,131 @@
 {
-    // Editor settings
-    "editor.fontFamily": "Consolas",
-    "editor.fontSize": 16,
-    "editor.lineHeight": 30,
-    "editor.rulers": [
-        80,
-        120
-    ],
-    "editor.quickSuggestions": {
-        "other": true,
-        "comments": false,
-        "strings": true
-    },
-    "editor.snippetSuggestions": "inline",
-    "editor.cursorBlinking": "phase",
-    "editor.cursorStyle": "underline",
-    "editor.renderWhitespace": "all",
-    "editor.renderControlCharacters": true,
-    "editor.renderIndentGuides": true,
-    "editor.renderLineHighlight": "all",
-    "editor.stablePeek": false,
+	// Editor settings
+	"editor.fontFamily": "Consolas",
+	"editor.fontSize": 16,
+	"editor.lineHeight": 30,
+	"editor.rulers": [
+		80,
+		120
+	],
+	"editor.quickSuggestions": {
+		"other": true,
+		"comments": false,
+		"strings": true
+	},
+	"editor.formatOnType": true,
+	"editor.snippetSuggestions": "inline",
+	"editor.cursorBlinking": "phase",
+	"editor.cursorStyle": "underline",
+	"editor.renderWhitespace": "all",
+	"editor.renderControlCharacters": true,
+	"editor.renderIndentGuides": true,
+	"editor.renderLineHighlight": "all",
+	"editor.stablePeek": false,
 
-    // Workbench settings
-    "workbench.editor.swipeToNavigate": true,
-    "workbench.welcome.enabled": true,
-    "workbench.iconTheme": "vs-nomo-dark",
-    "workbench.experimental.colorCustomizations": {
-        "statusBarBackground": "#466991"
-    },
+	// Workbench settings
+	"workbench.editor.swipeToNavigate": true,
+	"workbench.welcome.enabled": true,
+	"workbench.iconTheme": "vs-nomo-dark",
+	"workbench.experimental.colorCustomizations": {
+		"statusBarBackground": "#466991"
+	},
 
-    // Window settings
-    "window.newWindowDimensions": "inherit",
+	// Files settings
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/node_modules": true
+	},
+	"files.associations": {
+		"*.log": "log"
+	},
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true,
+	"files.hotExit": "off",
 
-    // Files settings
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
-        "**/node_modules": true
-    },
-    "files.associations": {
-        "*.log": "log"
-    },
-    "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewline": true,
-    "files.hotExit": "off",
+	// File Explorer settings
+	"explorer.autoReveal": false,
 
-    // File Explorer settings
-    "explorer.autoReveal": false,
+	// CSS settings
+	"css.colorDecorators.enable": false,
+	"css.lint.duplicateProperties": "warning",
+	"css.lint.zeroUnits": "error",
+	"css.lint.idSelector": "error",
 
-    // CSS settings
-    "css.colorDecorators.enable": false,
-    "css.lint.duplicateProperties": "warning",
-    "css.lint.zeroUnits": "error",
-    "css.lint.idSelector": "error",
+	// SCSS settings
+	"scss.colorDecorators.enable": false,
+	"scss.lint.duplicateProperties": "warning",
+	"scss.lint.zeroUnits": "error",
+	"scss.lint.idSelector": "error",
 
-    // SCSS settings
-    "scss.colorDecorators.enable": false,
-    "scss.lint.duplicateProperties": "warning",
-    "scss.lint.zeroUnits": "error",
-    "scss.lint.idSelector": "error",
+	// Less settings
+	"less.colorDecorators.enable": false,
+	"less.lint.duplicateProperties": "warning",
+	"less.lint.zeroUnits": "error",
+	"less.lint.idSelector": "error",
 
-    // Less settings
-    "less.colorDecorators.enable": false,
-    "less.lint.duplicateProperties": "warning",
-    "less.lint.zeroUnits": "error",
-    "less.lint.idSelector": "error",
+	// HTML setting
+	"html.format.wrapLineLength": 0,
+	"html.format.indentInnerHtml": true,
+	"html.format.maxPreserveNewLines": 1,
+	"html.format.endWithNewline": true,
+	"html.suggest.angular1": false,
+	"html.suggest.ionic": false,
 
-    // HTML setting
-    "html.format.wrapLineLength": 0,
-    "html.format.indentInnerHtml": true,
-    "html.format.maxPreserveNewLines": 1,
-    "html.format.endWithNewline": true,
-    "html.suggest.angular1": false,
-    "html.suggest.ionic": false,
+	// JSON settings
+	"json.colorDecorators.enable": false,
 
-    // JSON settings
-    "json.colorDecorators.enable": false,
+	// PHP settings
+	"php.suggest.basic": false,
+	"php.validate.enable": false,
 
-    // PHP settings
-    "php.suggest.basic": false,
-    "php.validate.enable": false,
+	// TypeScript settings
+	"typescript.tsserver.log": "verbose",
+	"typescript.disableAutomaticTypeAcquisition": true,
+	"typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
 
-    // TypeScript settings
-    "typescript.disableAutomaticTypeAcquisition": true,
-    "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+	// JavaScript settings
+	"javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
 
-    // JavaScript settings
-    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+	// Terminal settings
+	"terminal.external.osxExec": "iTerm.app",
 
-    // Terminal settings
-    "terminal.external.osxExec": "iTerm.app",
+	// Intergated Terminal settings
+	"terminal.integrated.fontSize": 14,
+	"terminal.integrated.lineHeight": 1.8,
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.cursorStyle": "underline",
+	"terminal.integrated.scrollback": 10000,
 
-    // Intergated Terminal settings
-    "terminal.integrated.fontSize": 14,
-    "terminal.integrated.lineHeight": 1.8,
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.cursorStyle": "underline",
-    "terminal.integrated.scrollback": 10000,
+	// Default Configuration Overrides settings
+	"[markdown]": {
+		"editor.wordWrapColumn": 120,
+		"editor.wordWrap": "wordWrapColumn"
+	},
+	"[python]": {
+		"editor.detectIndentation": false
+	},
 
-    // Default Configuration Overrides settings
-    "[markdown]": {
-        "editor.wordWrapColumn": 120,
-        "editor.wordWrap": "wordWrapColumn"
-    },
-    "[python]": {
-        "editor.detectIndentation": false
-    },
+	// Git
+	"git.enabled": true,
+	"gitHistory.displayDescription": "",
 
-    // Git
-    "git.enabled": false,
+	// Gulp settings
+	"gulp.autoDetect": "off",
 
-    // Gulp settings
-    "gulp.autoDetect": "off",
+	// Python extension
+	"python.autoComplete.extraPaths": [
+		"/Users/mrmlnc/Documents/Sandbox/sandbox"
+	],
+	"python.linting.pylintEnabled": false,
+	"python.linting.flake8Enabled": true,
 
-    // Extensions settings
-    "python.autoComplete.extraPaths": [
-        "/Users/mrmlnc/Documents/Sandbox/sandbox"
-    ],
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "eslint.nodePath": "./node_modules/serp-ci"
+	// ESLint extension
+	"eslint.nodePath": "./node_modules/serp-ci",
+
+	// Docker extension
+	"docker.enableLinting": true
 }
