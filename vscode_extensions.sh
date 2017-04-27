@@ -5,18 +5,21 @@ source $BASEDIR/colors.sh
 
 EXTENSIONS=(
 	"CoenraadS.bracket-pair-colorizer" \
-	"PeterJausovec.vscode-docker" \
 	"EditorConfig.EditorConfig" \
-	"dbaeumer.vscode-eslint" \
-	"oderwat.indent-rainbow" \
+	"PeterJausovec.vscode-docker" \
 	"akamud.vscode-javascript-snippet-pack" \
-	"emilast.LogFileHighlighter" \
 	"be5invis.vscode-icontheme-nomo-dark" \
-	"progre.promise-snippets" \
+	"dbaeumer.vscode-eslint" \
+	"donjayamanne.githistory" \
 	"donjayamanne.python" \
 	"eg2.tslint" \
+	"emilast.LogFileHighlighter" \
 	"mkxml.vscode-filesize" \
-	"mrmlnc.vscode-duplicate"
+	"mrmlnc.vscode-duplicate" \
+	"oderwat.indent-rainbow" \
+	"pprice.better-merge" \
+	"progre.promise-snippets" \
+	"sysoev.vscode-open-in-github"
 )
 
 echo
