@@ -1,8 +1,11 @@
 [
+	// Correct work with Emmet
 	{
 		"key": "tab",
 		"command": "-acceptSelectedSuggestion"
 	},
+
+	// Suggestions
 	{
 		"key": "alt+space",
 		"command": "editor.action.triggerSuggest",
@@ -12,5 +15,11 @@
 		"key": "alt+space",
 		"command": "toggleSuggestionDetails",
 		"when": "editorTextFocus && suggestWidgetVisible"
+	},
+
+	// Window
+	{
+		"key": "alt+w",
+		"command": "workbench.action.switchWindow"
 	}
 ]
