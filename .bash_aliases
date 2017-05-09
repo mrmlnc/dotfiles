@@ -4,7 +4,7 @@
 alias wd="cd ~/Documents"
 alias wg="cd ~/Documents/GitHub"
 alias wt="cd ~/Documents/Texts"
-alias ws="cd ~/Documents/Scripts"
+alias ws="cd ~/Documents/Sandbox"
 alias gti="git $1"
 
 # Easier navigation: .., ... and ~
@@ -21,3 +21,6 @@ alias grep='grep --color=auto'
 
 # Applications
 alias site="open -a safari $1"
+
+# System
+alias lock='pmset displaysleepnow'
