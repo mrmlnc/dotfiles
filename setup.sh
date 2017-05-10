@@ -69,6 +69,10 @@ echo "${YELLOW}Install applications...${NC}"
 source $BASEDIR/cask.sh
 
 echo
+echo "${YELLOW}Install consolas font...${NC}"
+source $BASEDIR/consolas.sh
+
+echo
 echo "${YELLOW}Configuring VS Code...${NC}"
 for file in {locale,settings,keybindings}.json; do
 	cp $BASEDIR/.vscode/$file ~/Library/Application\ Support/Code/User/$file
