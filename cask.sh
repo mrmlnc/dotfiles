@@ -6,14 +6,22 @@ source $BASEDIR/colors.sh
 APPS=(
 	# Core
 	"spectacle" \
+	"flux" \
 
 	# Dev
 	"iterm2" \
 	"visual-studio-code" \
+	"postman" \
+	"virtualbox" \
+	"docker" \
+	"docker-machine" \
 
 	# Communications
 	"telegram" \
-	"slack"
+	"slack" \
+	
+	# Browsers
+	"yandex"
 )
 
 echo
