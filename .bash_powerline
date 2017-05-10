@@ -71,7 +71,6 @@ __powerline() {
 		fi
 
 		PS1="$BG_PATH$FG_COLOR \w $RESET"
-		PS1+="$BG_GIT$FG_COLOR$(__git_info)$RESET"
 		# Bash by default expands the content of PS1 unless promptvars is disabled.
 		# We must use another layer of reference to prevent expanding any user
 		# provided strings, which would cause security issues.
