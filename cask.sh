@@ -14,7 +14,6 @@ APPS=(
 	"postman" \
 	"virtualbox" \
 	"docker" \
-	"docker-machine" \
 
 	# Communications
 	"telegram" \
