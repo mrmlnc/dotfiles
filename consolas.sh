@@ -19,4 +19,4 @@ cabextract PowerPointViewer.exe
 cabextract ppviewer.cab
 
 # Open font
-open CONSOLA*.TTF
+cp -R CONSOLA*.TTF ~/Library/Fonts
