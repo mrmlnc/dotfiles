@@ -65,6 +65,10 @@ git config --global user.name "$GIT_USER"
 git config --global user.email "$GIT_EMAIL"
 
 echo
+echo "${YELLOW}Install applications...${NC}"
+source $BASEDIR/cask.sh
+
+echo
 echo "${YELLOW}Configuring VS Code...${NC}"
 for file in {locale,settings,keybindings}.json; do
 	cp $BASEDIR/.vscode/$file ~/Library/Application\ Support/Code/User/$file
