@@ -26,5 +26,8 @@ if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
 	chsh -s /usr/local/bin/bash;
 fi;
 
+# Install Python
+brew install python
+
 # Remove outdated versions from the cellar.
 brew cleanup
