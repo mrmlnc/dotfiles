@@ -69,13 +69,16 @@ echo "${YELLOW}Install applications...${NC}"
 source $BASEDIR/cask.sh
 
 echo
-echo "${YELLOW}Install consolas font...${NC}"
-source $BASEDIR/consolas.sh
+echo "${YELLOW}Install some installers...${NC}"
+for file in $(ls ./installers); do
+	source $BASEDIR/installers/$file
+done
+unset file
 
 echo
 echo "${YELLOW}Configuring VS Code...${NC}"
 for file in {locale,settings,keybindings}.json; do
-	cp $BASEDIR/.vscode/$file ~/Library/Application\ Support/Code/User/$file
+	sudo cp $BASEDIR/.vscode/$file ~/Library/Application\ Support/Code/User/$file
 
 	if [ $? -eq 0 ]; then
 		echo ".vscode/$file (${GREEN}copied${NC})"
