@@ -7,6 +7,7 @@ APPS=(
 	# Core
 	"spectacle" \
 	"flux" \
+	"java" \
 
 	# Dev
 	"iterm2" \
@@ -17,10 +18,7 @@ APPS=(
 
 	# Communications
 	"telegram" \
-	"slack" \
-	
-	# Browsers
-	"yandex"
+	"slack"
 )
 
 echo
