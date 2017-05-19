@@ -27,7 +27,7 @@
 	"workbench.welcome.enabled": true,
 	"workbench.iconTheme": "vs-nomo-dark",
 	"workbench.colorCustomizations": {
-		"statusBarBackground": "#466991"
+		"statusBar.background": "#466991"
 	},
 
 	// Files settings
