@@ -18,9 +18,10 @@
 	"editor.cursorStyle": "underline",
 	"editor.renderWhitespace": "all",
 	"editor.renderControlCharacters": true,
-	"editor.renderIndentGuides": true,
 	"editor.renderLineHighlight": "all",
 	"editor.stablePeek": false,
+	"editor.minimap.enabled": false,
+	"editor.dragAndDrop": false,
 
 	// Workbench settings
 	"workbench.editor.swipeToNavigate": true,
@@ -48,6 +49,12 @@
 
 	// File Explorer settings
 	"explorer.autoReveal": false,
+
+	// Extensions settings
+	"extensions.autoUpdate": false,
+
+	// Emmet settings
+	"emmet.useNewEmmet": true,
 
 	// CSS settings
 	"css.colorDecorators.enable": false,
@@ -83,7 +90,6 @@
 	"php.validate.enable": false,
 
 	// TypeScript settings
-	"typescript.tsserver.log": "verbose",
 	"typescript.disableAutomaticTypeAcquisition": true,
 	"typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
 
