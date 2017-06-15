@@ -19,7 +19,8 @@ EXTENSIONS=(
 	"oderwat.indent-rainbow" \
 	"pprice.better-merge" \
 	"progre.promise-snippets" \
-	"sysoev.vscode-open-in-github"
+	"sysoev.vscode-open-in-github" \
+	"patrys.vscode-code-outline"
 )
 
 echo
