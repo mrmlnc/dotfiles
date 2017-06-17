@@ -20,6 +20,7 @@ alias ll='ls -l'
 alias grep='grep --color=auto'
 
 # Applications
+alias safari="open -a safari"
 alias site="open -a safari $1"
 
 # System
