@@ -12,6 +12,7 @@
 		"comments": false,
 		"strings": true
 	},
+	"editor.colorDecorators": false,
 	"editor.formatOnType": true,
 	"editor.snippetSuggestions": "inline",
 	"editor.cursorBlinking": "phase",
@@ -25,11 +26,13 @@
 
 	// Workbench settings
 	"workbench.editor.swipeToNavigate": true,
-	"workbench.welcome.enabled": true,
 	"workbench.iconTheme": "vs-nomo-dark",
 	"workbench.colorCustomizations": {
 		"statusBar.background": "#466991"
 	},
+
+	// Window settings
+	"window.title": "${activeEditorMedium}${separator}${rootName}",
 
 	// Files settings
 	"files.exclude": {
@@ -46,6 +49,7 @@
 	"files.trimTrailingWhitespace": true,
 	"files.insertFinalNewline": true,
 	"files.hotExit": "off",
+	"files.useExperimentalFileWatcher": true,
 
 	// File Explorer settings
 	"explorer.autoReveal": false,
@@ -53,23 +57,17 @@
 	// Extensions settings
 	"extensions.autoUpdate": false,
 
-	// Emmet settings
-	"emmet.useNewEmmet": true,
-
 	// CSS settings
-	"css.colorDecorators.enable": false,
 	"css.lint.duplicateProperties": "warning",
 	"css.lint.zeroUnits": "error",
 	"css.lint.idSelector": "error",
 
 	// SCSS settings
-	"scss.colorDecorators.enable": false,
 	"scss.lint.duplicateProperties": "warning",
 	"scss.lint.zeroUnits": "error",
 	"scss.lint.idSelector": "error",
 
 	// Less settings
-	"less.colorDecorators.enable": false,
 	"less.lint.duplicateProperties": "warning",
 	"less.lint.zeroUnits": "error",
 	"less.lint.idSelector": "error",
@@ -81,9 +79,6 @@
 	"html.format.endWithNewline": true,
 	"html.suggest.angular1": false,
 	"html.suggest.ionic": false,
-
-	// JSON settings
-	"json.colorDecorators.enable": false,
 
 	// PHP settings
 	"php.suggest.basic": false,
@@ -130,8 +125,5 @@
 	"python.linting.flake8Enabled": true,
 
 	// ESLint extension
-	"eslint.nodePath": "./node_modules/serp-ci",
-
-	// Docker extension
-	"docker.enableLinting": true
+	"eslint.nodePath": "./node_modules/serp-ci"
 }
