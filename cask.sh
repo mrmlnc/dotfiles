@@ -18,7 +18,8 @@ APPS=(
 
 	# Communications
 	"telegram" \
-	"slack"
+	"slack" \
+	"gitify"
 )
 
 echo
