@@ -1,8 +1,9 @@
 {
-	// Editor settings
+	// Editor (font) settings
 	"editor.fontFamily": "Consolas",
 	"editor.fontSize": 14,
-	"editor.lineHeight": 30,
+	"editor.lineHeight": 32,
+	// Editor settings
 	"editor.rulers": [
 		80,
 		120
@@ -12,6 +13,7 @@
 		"comments": false,
 		"strings": true
 	},
+	"editor.showUnused": false,
 	"editor.colorDecorators": false,
 	"editor.formatOnType": true,
 	"editor.snippetSuggestions": "inline",
@@ -42,7 +44,8 @@
 		"**/node_modules": true
 	},
 	"files.associations": {
-		"*.log": "log"
+		"*.log": "log",
+		"**/.vsts/**/*.yml": "azure-pipelines"
 	},
 	"files.trimTrailingWhitespace": true,
 	"files.insertFinalNewline": true,
@@ -51,7 +54,6 @@
 	// File Explorer settings
 	"explorer.autoReveal": false,
 	"explorer.decorations.colors": false,
-	"explorer.confirmDelete": false,
 	// Search settings
 	"search.useIgnoreFiles": true,
 	"search.exclude": {
@@ -78,8 +80,6 @@
 	"html.format.indentInnerHtml": true,
 	"html.format.maxPreserveNewLines": 1,
 	"html.format.endWithNewline": true,
-	"html.suggest.angular1": false,
-	"html.suggest.ionic": false,
 	// PHP settings
 	"php.suggest.basic": false,
 	"php.validate.enable": false,
@@ -105,7 +105,6 @@
 	},
 	// Git
 	"git.enabled": true,
-	"gitHistory.displayDescription": "",
 	// Gulp settings
 	"gulp.autoDetect": "off",
 	// Python extension
@@ -115,9 +114,14 @@
 	"python.linting.pylintEnabled": false,
 	"python.linting.flake8Enabled": true,
 	// ESLint extension
-	"eslint.nodePath": "./node_modules/serp-ci",
-	// Docker extension
-	"docker.showExplorer": false,
+	"eslint.run": "onSave",
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"typescript"
+	],
+	// TSLint extension
+	"tslint.run": "onSave",
 	// Postfix TS/JS
 	"postfix.customTemplates": [
 		// Console
@@ -132,5 +136,21 @@
 			]
 		}
 	],
-	"workbench.panel.location": "bottom"
+	"workbench.startupEditor": "welcomePage",
+	"cSpell.minWordLength": 2,
+	"cSpell.spellCheckDelayMs": 500,
+	"cSpell.language": "en,ru",
+	"cSpell.userWords": [
+		"nodelib",
+		"groupable",
+		"execa",
+		"ipc",
+		"tsc",
+		"quantile",
+		"stdev"
+	],
+	"window.zoomLevel": 0,
+	"diffEditor.renderSideBySide": true,
+	"editor.lightbulb.enabled": false,
+	"python.jediEnabled": false
 }

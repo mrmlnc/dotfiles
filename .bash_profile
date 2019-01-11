@@ -1,5 +1,7 @@
-# Add `~/bin` to the `$PATH`
-# export PATH="$HOME/bin:$PATH";
+export LC_ALL=en_US.UTF-8;
+
+HISTSIZE=5000
+HISTFILESIZE=10000
 
 # Load the shell dotfiles, and then some:
 for file in .{bash_aliases,bash_functions}; do
@@ -43,7 +45,10 @@ fi;
 
 # Add powerline
 source ~/.bash_powerline
+source ~/.bash_up
 
-# Add NVS (TODO: move to ...?)
+# Add NVS
 export NVS_HOME="/usr/local/nvs"
 [ -s "$NVS_HOME/nvs.sh" ] && . "$NVS_HOME/nvs.sh"
+
+export PATH="$HOME/.npm-global/bin:$PATH"

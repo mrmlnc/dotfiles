@@ -2,9 +2,6 @@
 
 __powerline() {
 	# Unicode symbols
-	readonly PS_SYMBOL_DARWIN=''
-	readonly PS_SYMBOL_LINUX='$'
-	readonly PS_SYMBOL_OTHER='%'
 	readonly GIT_BRANCH_SYMBOL='⑂ '
 	readonly GIT_BRANCH_CHANGED_SYMBOL='+'
 	readonly GIT_NEED_PUSH_SYMBOL='⇡'
@@ -33,32 +30,38 @@ __powerline() {
 	fi
 
 	__git_info() {
-		# git not found
-		[ -x "$(which git)" ] || return
+		[[ $POWERLINE_GIT = 0 ]] && return # disabled
+		hash git 2>/dev/null || return # git not found
+		local git_eng="env LANG=C git"   # force git output in English to make our work easier
 
-		# force git output in English to make our work easier
-		local git_eng="env LANG=C git"
+		# get current branch name
+		local ref=$($git_eng symbolic-ref --short HEAD 2>/dev/null)
 
-		# get current branch name or short SHA1 hash for detached head
-		local branch="$($git_eng symbolic-ref --short HEAD 2>/dev/null || $git_eng describe --tags --always 2>/dev/null)"
+		if [[ -n "$ref" ]]; then
+			# prepend branch symbol
+			ref=$GIT_BRANCH_SYMBOL$ref
+		else
+			# get tag name or short unique hash
+			ref=$($git_eng describe --tags --always 2>/dev/null)
+		fi
 
-		# git branch not found
-		[ -n "$branch" ] || return
+		[[ -n "$ref" ]] || return  # not a git repo
 
 		local marks
 
-		# branch is modified?
-		[ -n "$($git_eng status --porcelain)" ] && marks+=" $GIT_BRANCH_CHANGED_SYMBOL"
-
-		# how many commits local branch is ahead/behind of remote?
-		local stat="$($git_eng status --porcelain --branch | grep '^##' | grep -o '\[.\+\]$')"
-		local aheadN="$(echo $stat | grep -o 'ahead [[:digit:]]\+' | grep -o '[[:digit:]]\+')"
-		local behindN="$(echo $stat | grep -o 'behind [[:digit:]]\+' | grep -o '[[:digit:]]\+')"
-		[ -n "$aheadN" ] && marks+=" $GIT_NEED_PUSH_SYMBOL$aheadN"
-		[ -n "$behindN" ] && marks+=" $GIT_NEED_PULL_SYMBOL$behindN"
+		# scan first two lines of output from `git status`
+		while IFS= read -r line; do
+			if [[ $line =~ ^## ]]; then # header line
+				[[ $line =~ ahead\ ([0-9]+) ]] && marks+=" $GIT_NEED_PUSH_SYMBOL${BASH_REMATCH[1]}"
+				[[ $line =~ behind\ ([0-9]+) ]] && marks+=" $GIT_NEED_PULL_SYMBOL${BASH_REMATCH[1]}"
+			else # branch is modified if output contains more lines after the header line
+				marks="$GIT_BRANCH_CHANGED_SYMBOL$marks"
+				break
+			fi
+		done < <($git_eng status --porcelain --branch 2>/dev/null)  # note the space between the two <
 
 		# print the git branch segment without a trailing newline
-		printf " $GIT_BRANCH_SYMBOL$branch$marks "
+		printf " $ref$marks "
 	}
 
 	ps1() {

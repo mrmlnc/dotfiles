@@ -4,23 +4,27 @@
 source $BASEDIR/colors.sh
 
 EXTENSIONS=(
-	"CoenraadS.bracket-pair-colorizer" \
-	"EditorConfig.EditorConfig" \
-	"PeterJausovec.vscode-docker" \
-	"akamud.vscode-javascript-snippet-pack" \
+	"alefragnani.bookmarks" \
 	"be5invis.vscode-icontheme-nomo-dark" \
+	"coenraads.bracket-pair-colorizer-2" \
+	"davidanson.vscode-markdownlint" \
 	"dbaeumer.vscode-eslint" \
-	"donjayamanne.githistory" \
-	"donjayamanne.python" \
+	"editorconfig.editorconfig" \
 	"eg2.tslint" \
-	"emilast.LogFileHighlighter" \
-	"mkxml.vscode-filesize" \
-	"mrmlnc.vscode-duplicate" \
+	"emilast.logfilehighlighter" \
+	"github.vscode-pull-request-github" \
+	"ipatalas.vscode-postfix-ts" \
+	"johnstoncode.svn-scm" \
+	"ms-azure-devops.azure-pipelines" \
+	"ms-python.python" \
+	"ms-vscode.powershell" \
 	"oderwat.indent-rainbow" \
-	"pprice.better-merge" \
-	"progre.promise-snippets" \
-	"sysoev.vscode-open-in-github" \
-	"patrys.vscode-code-outline"
+	"peterjausovec.vscode-docker" \
+	"redhat.vscode-yaml" \
+	"rust-lang.rust" \
+	"streetsidesoftware.code-spell-checker-russian" \
+	"streetsidesoftware.code-spell-checker" \
+	"visualstudioexptteam.vscodeintellicode"
 )
 
 echo

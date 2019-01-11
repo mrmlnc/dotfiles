@@ -12,8 +12,10 @@ APPS=(
 	# Dev
 	"iterm2" \
 	"visual-studio-code" \
+	"sublime-text" \
 	"postman" \
 	"virtualbox" \
+	"powershell" \
 	"docker" \
 
 	# Communications

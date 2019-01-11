@@ -3,7 +3,9 @@
 # Aliases
 alias wd="cd ~/Documents"
 alias wg="cd ~/Documents/GitHub"
+alias wo="cd ~/Documents/OpenSource"
 alias wt="cd ~/Documents/Texts"
+alias wts="cd ~/Documents/Tests"
 alias ws="cd ~/Documents/Sandbox"
 alias gti="git $1"
 

@@ -5,9 +5,15 @@
 [core]
 	editor = code --wait
 	autocrlf = input
+	ignoreCase = false
 
 [help]
 	autocorrect = 1
+
+[diff]
+	renames = copies
+	indentHeuristic = true
+	renameLimit = 2000
 
 [alias]
 	st = status -sb
