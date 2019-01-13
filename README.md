@@ -4,8 +4,20 @@ Just my dotfiles.
 
 ## Installation
 
+### macOS
+
 ```shell
-$ git clone https://github.com/mrmlnc/dotfiles ~/.dotfiles && bash ~/.dotfiles/setup.sh
+git clone https://github.com/mrmlnc/dotfiles ~/.dotfiles
+cd ~/.dotfiles/macos
+bash setup.sh
+```
+
+### Windows
+
+```powershell
+git clone https://github.com/mrmlnc/dotfiles ~\.dotfiles
+cd ~\.dotfiles\windows
+setup.ps1
 ```
 
 ## Thanks
