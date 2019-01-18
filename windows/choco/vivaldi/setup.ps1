@@ -1,5 +1,5 @@
 Import-Module -Name "$PSScriptRoot\..\..\utils.ps1" -Force
 
-[Logger]::Install("Chromium")
+[Logger]::Install("Vivaldi")
 
-choco install chromium
+choco install vivaldi
