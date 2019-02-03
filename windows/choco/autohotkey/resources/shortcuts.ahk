@@ -22,3 +22,23 @@ Return
 !q::
 Send, !{F4}
 Return
+
+!SC028:: ; Alt + ' («)
+Send, {Asc 0171}
+return
+
+!^SC028:: ; Alt + Shift + ' (»)
+Send, {Asc 0187}
+return
+
+!SC00C:: ; Alt + - (—)
+Send, {Asc 0151}
+Return
+
+!^T:: ; Alt + Ctrl + T (™)
+Send, {Asc 0153}
+Return
+
+!SC035:: ; Alt + / (…)
+Send, {Asc 0133}
+Return
