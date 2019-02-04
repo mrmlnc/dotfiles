@@ -36,6 +36,7 @@
 	// Window settings
 	"window.title": "${activeEditorMedium}${separator}${rootName}",
 	// Files settings
+	"files.eol": "\n",
 	"files.exclude": {
 		"**/.git": true,
 		"**/.svn": true,
@@ -109,9 +110,7 @@
 	// Gulp settings
 	"gulp.autoDetect": "off",
 	// Python extension
-	"python.autoComplete.extraPaths": [
-		"/Users/mrmlnc/Documents/Sandbox/sandbox"
-	],
+	"python.jediEnabled": false,
 	"python.linting.pylintEnabled": false,
 	"python.linting.flake8Enabled": true,
 	// ESLint extension
@@ -138,7 +137,7 @@
 		}
 	],
 	"workbench.startupEditor": "welcomePage",
-	"cSpell.minWordLength": 2,
+	"cSpell.minWordLength": 3,
 	"cSpell.spellCheckDelayMs": 500,
 	"cSpell.language": "en,ru",
 	"cSpell.userWords": [
@@ -149,10 +148,5 @@
 		"tsc",
 		"quantile",
 		"stdev"
-	],
-	"window.zoomLevel": 0,
-	"diffEditor.renderSideBySide": true,
-	"editor.lightbulb.enabled": false,
-	"python.jediEnabled": false,
-	"powershell.powerShellExePath": "C:\\Program Files\\PowerShell\\6\\pwsh.exe"
+	]
 }
