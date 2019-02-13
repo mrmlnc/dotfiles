@@ -3,42 +3,18 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-!T::
-Send, ^t
-Return
+; Common
 
-!+T::
-Send, ^+t
-Return
+!T:: Send ^t ; Alt + T (Ctrl + T)
+!+T:: Send ^+t ; Alt + Shift + T (Ctrl + Shift + T)
+!SC01A:: Send ^+{Tab} ; Ctrl + Alt + [ (Ctrl + Shift + Tab)
+!SC01B:: Send ^{Tab} ; Ctrl + Alt + ] (Ctrl + Tab)
+!q:: Send !{F4} ; Alt + q (Alt + F4)
 
-*!+}::
-Send, ^{Tab}
-Return
+; Typography hotkeys
 
-*!+{::
-Send, ^+{Tab}
-Return
-
-!q::
-Send, !{F4}
-Return
-
-!SC028:: ; Alt + ' («)
-Send, {Asc 0171}
-return
-
-!^SC028:: ; Alt + Shift + ' (»)
-Send, {Asc 0187}
-return
-
-!SC00C:: ; Alt + - (—)
-Send, {Asc 0151}
-Return
-
-!^T:: ; Alt + Ctrl + T (™)
-Send, {Asc 0153}
-Return
-
-!SC035:: ; Alt + / (…)
-Send, {Asc 0133}
-Return
+!SC028:: Send {Asc 0171} ; Alt + ' («)
+!^SC028:: Send {Asc 0187} ; Alt + Shift + ' (»)
+!SC00C:: Send {Asc 0151} ; Alt + - (—)
+!^T:: Send {Asc 0153} ; Alt + Ctrl + T (™)
+!SC035:: Send {Asc 0133} ; Alt + / (…)
