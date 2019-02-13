@@ -5,6 +5,8 @@ if ($profileModuleSymlinkTargetPath) {
     $profileModule = $profileModuleSymlinkTargetPath
 }
 
+[Console]::OutputEncoding = [System.Text.Encoding]::GetEncoding("utf-8")
+
 $profileRootPath = Split-Path -Parent $profileModule
 
 Import-Module -Name "$profileRootPath\aliases.ps1" -Force
