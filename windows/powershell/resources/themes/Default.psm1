@@ -25,7 +25,8 @@ function Write-Theme {
         $prompt += Write-Prompt -Object " [$($gitStatus.Branch)]" -ForegroundColor $Theme.Colors.GitForegroundColor
     }
 
-    $prompt += ""
+    $prompt += " > "
+    $prompt
 }
 
 function GetPromptSymbolsForegroundColor ([bool] $LastCommadFailed) {
