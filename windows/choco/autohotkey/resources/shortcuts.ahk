@@ -11,11 +11,11 @@ Return
 Send, ^+t
 Return
 
-!+}::
+~!+}::
 Send, ^{Tab}
 Return
 
-!+{::
+~!+{::
 Send, ^+{Tab}
 Return
 
