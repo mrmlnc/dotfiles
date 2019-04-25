@@ -1,5 +1,5 @@
 Import-Module -Name "$PSScriptRoot\..\..\utils.ps1" -Force
 
-[Logger]::Install("Process Explorer")
+[Logger]::Setup("SysInternals")
 
-choco install procexp
+choco install sysinternals
