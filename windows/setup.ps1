@@ -1,13 +1,9 @@
+#Requires -RunAsAdministrator
+
 Import-Module -Name .\utils.ps1 -Force
 
 if ($PSVersionTable.PSVersion.Major -lt 6) {
     Write-Output "Requires PowerShell 6."
-
-    exit
-}
-
-if (-not (Test-Administrator)) {
-    Write-Output "Requires administrator privileges."
 
     exit
 }
