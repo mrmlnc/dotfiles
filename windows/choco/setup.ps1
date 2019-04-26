@@ -13,6 +13,9 @@ else {
 
 choco feature enable -n=allowGlobalConfirmation
 
+# Required for `Update-SessionEnvironment`
+Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1" -Force;
+
 $entries = Get-Item -Path "$PSScriptRoot\*\setup.ps1"
 
 foreach ($entry in $entries) {

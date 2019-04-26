@@ -4,6 +4,9 @@ Import-Module -Name "$PSScriptRoot\..\..\utils.ps1" -Force
 
 choco install git
 
+# Update PATH after install git otherwise, we cannot run the commands below
+Update-SessionEnvironment
+
 Copy-Item -Path "$PSScriptRoot\resources\.gitconfig" -Destination "~\.gitconfig" -Force -Verbose | Out-Null
 
 $currentGitUser = git config --global --get user.name

@@ -4,6 +4,10 @@ Import-Module -Name "$PSScriptRoot\..\..\utils.ps1" -Force
 
 choco install vscode
 
+# Update PATH after install git otherwise, we cannot run the commands below
+Update-SessionEnvironment
+
+New-Item -Path "$env:APPDATA\Code\User" -ItemType Directory -Force -Verbose | Out-Null
 Copy-Item -Path "$PSScriptRoot\resources\settings.json" -Destination "$env:APPDATA\Code\User\settings.json" -Force -Verbose | Out-Null
 Copy-Item -Path "$PSScriptRoot\resources\keybindings.json" -Destination "$env:APPDATA\Code\User\keybindings.json" -Force -Verbose | Out-Null
 
