@@ -15,6 +15,9 @@ bash setup.sh
 ### Windows
 
 ```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+# Use git or download button on GitHub
 git clone https://github.com/mrmlnc/dotfiles ~\.dotfiles
 cd ~\.dotfiles\windows
 setup.ps1
