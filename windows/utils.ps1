@@ -3,6 +3,10 @@ class Logger {
         Write-Host "==> Install $Name"
     }
 
+    static Uninstall($Name) {
+        Write-Host "==> Uninstall $Name"
+    }
+
     static Setup($Name) {
         Write-Host "==> Setup $Name"
     }
