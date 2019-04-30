@@ -12,3 +12,9 @@ Copy-Item -Path "$PSScriptRoot\resources\Kill.ini" -Destination "$env:APPDATA\Ke
 $appPath = (Get-Command keypirinha.exe).Path
 
 Create-Shortcut -Shortcut "keypirinha" -Target $appPath
+
+[Logger]::Install("Keypirinha Package Control")
+
+$url = 'https://github.com/ueffel/Keypirinha-PackageControl/releases/download/1.0.0/PackageControl.keypirinha-package';
+
+Download-File -Url $url -Destination "$env:APPDATA\Keypirinha\InstalledPackages\PackageControl.keypirinha-package"

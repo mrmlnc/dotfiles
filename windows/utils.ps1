@@ -41,3 +41,7 @@ function Create-Shortcut($Shortcut, $Target) {
 
     Write-Output "Shortcut was successfully created"
 }
+
+function Download-File($Url, $Destination) {
+    (New-Object System.Net.WebClient).DownloadFile($Url, $Destination);
+}
