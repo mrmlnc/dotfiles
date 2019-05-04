@@ -45,3 +45,9 @@ function Create-Shortcut($Shortcut, $Target) {
 function Download-File($Url, $Destination) {
     (New-Object System.Net.WebClient).DownloadFile($Url, $Destination);
 }
+
+function New-TemporaryDirectory {
+    $DirPath = ([System.IO.Path]::GetTempPath() + '~' + ([System.IO.Path]::GetRandomFileName())).Split('.')[0];
+
+    return New-Item -Path $DirPath -ItemType Directory
+}
