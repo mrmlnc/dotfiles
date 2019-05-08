@@ -6,4 +6,6 @@ function Install {
 function Configure {
     pip2 install --upgrade pip
     pip3 install --upgrade pip
+
+    pip install --upgrade httpie
 }
