@@ -18,4 +18,4 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 !SC00C:: Send {Asc 0151} ; Alt + - (—)
 !^T:: Send {Asc 0153} ; Alt + Ctrl + T (™)
 !SC035:: Send {Asc 0133} ; Alt + / (…)
-!Right:: Send {Asc 26} ; Alt + Right (→)
+!Right:: Send {U+2192} ; Alt + Right (→)
