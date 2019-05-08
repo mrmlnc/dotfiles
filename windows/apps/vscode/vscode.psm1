@@ -20,6 +20,7 @@ $Extensions = @(
     "peterjausovec.vscode-docker"
     "redhat.vscode-yaml"
     "rust-lang.rust"
+    "slevesque.vscode-autohotkey"
     "streetsidesoftware.code-spell-checker-russian"
     "streetsidesoftware.code-spell-checker"
     "visualstudioexptteam.vscodeintellicode"
