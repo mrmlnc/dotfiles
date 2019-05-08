@@ -1,4 +1,4 @@
-$profileModule = Get-Item -Path $PSCommandPath
+$profileModule = Get-Item $PSCommandPath
 $profileModuleSymlinkTargetPath = $profileModule.Target
 
 if ($profileModuleSymlinkTargetPath) {
@@ -7,12 +7,12 @@ if ($profileModuleSymlinkTargetPath) {
 
 [Console]::OutputEncoding = [System.Text.Encoding]::GetEncoding("utf-8")
 
-$profileRootPath = Split-Path -Parent $profileModule
+$profileRootPath = Split-Path $profileModule
 
-Import-Module -Name "$profileRootPath\aliases.ps1" -Force
-Import-Module -Name "$profileRootPath\cmdlets.ps1" -Force
+Import-Module "$profileRootPath\aliases.ps1" -Force
+Import-Module "$profileRootPath\cmdlets.ps1" -Force
 
-Import-Module -Name "$profileRootPath\oh-my-posh.ps1" -Force
+Import-Module "$profileRootPath\oh-my-posh.ps1" -Force
 
 Set-PSReadLineOption -HistorySearchCursorMovesToEnd
 Set-PSReadLineKeyHandler -Chord UpArrow -Function HistorySearchBackward

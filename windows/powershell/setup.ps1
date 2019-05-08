@@ -1,15 +1,10 @@
-Import-Module -Name "$PSScriptRoot\..\utils.ps1" -Force
+LogProcess "Install PowerShell modules"
 
-[Logger]::Install("PowerShell Modules")
+Install-Module posh-git -Force -Confirm:$false
+Install-Module oh-my-posh -Force -Confirm:$false
 
-Install-Module posh-git -Verbose
-Install-Module oh-my-posh -Verbose
+LogProcess "Setup PowerShell profile"
 
-[Logger]::Done("PowerShell Modules")
+$ProfilePath = Join-Path $PSScriptRoot "resources" "profile.ps1"
 
-[Logger]::Setup("PowerShell")
-
-New-Item -Path $profile -ItemType SymbolicLink -Value "$PSScriptRoot\resources\profile.ps1" -Force -Verbose | Out-Null
-
-[Logger]::Done("PowerShell")
-
+New-Item $profile -ItemType SymbolicLink -Value $ProfilePath -Force
