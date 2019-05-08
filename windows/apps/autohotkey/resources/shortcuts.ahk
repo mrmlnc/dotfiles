@@ -19,3 +19,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 !^T:: Send {Asc 0153} ; Alt + Ctrl + T (™)
 !SC035:: Send {Asc 0133} ; Alt + / (…)
 !Right:: Send {U+2192} ; Alt + Right (→)
+
+; Multimedia hotkeys
+!^PgDn:: Send {Media_Prev} ; Ctrl + Alt + PageDown
+!^PgUp:: Send {Media_Next} ; Ctrl + Alt + PageUp
+!^PrintScreen:: Send {Media_Play_Pause} ; Ctrl + Alt + Enter
