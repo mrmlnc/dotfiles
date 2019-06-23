@@ -7,6 +7,8 @@ if ($profileModuleSymlinkTargetPath) {
 
 [Console]::OutputEncoding = [System.Text.Encoding]::GetEncoding("utf-8")
 
+$env:LC_ALL='C.UTF-8'
+
 $profileRootPath = Split-Path $profileModule
 
 Import-Module "$profileRootPath\aliases.ps1" -Force
