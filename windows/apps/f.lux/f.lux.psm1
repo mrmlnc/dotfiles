@@ -1,3 +1,3 @@
 function Install {
-    choco install f.lux
+    choco install f.lux -params "/noautostart"
 }
