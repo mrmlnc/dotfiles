@@ -20,3 +20,7 @@ foreach ($TweakModule in Get-Item "$PSScriptRoot\*.psm1") {
 
     Remove-Module $ModuleName -Force -Verbose:$false
 }
+
+LogProcess "Reload explorer to pick up tweaks"
+
+Stop-Process -Name explorer
