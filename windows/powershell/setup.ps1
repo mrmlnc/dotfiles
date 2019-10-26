@@ -1,6 +1,6 @@
 LogProcess "Install PowerShell modules"
 
-Install-Module posh-git -Force -Confirm:$false
+Install-Module posh-git -Force -Confirm:$false -AllowPrerelease
 Install-Module oh-my-posh -Force -Confirm:$false
 
 LogProcess "Setup PowerShell profile"
