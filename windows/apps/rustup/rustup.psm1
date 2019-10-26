@@ -2,6 +2,9 @@ $ApplicationUrl = "https://win.rustup.rs/x86_64"
 $TemporaryDirectory = NewTemporaryDirectory
 $InstallerFile = Join-Path $TemporaryDirectory "rustup-init.exe"
 
+$CargoHomeEnvName = "CARGO_HOME"
+$CargoHomeEnvValue = "D:\work\.cargo-cache"
+
 function Skip {
     return IsExistCommand "rustup"
 }
@@ -16,4 +19,8 @@ function Install {
 
 function After {
     Remove-Item $TemporaryDirectory -Recurse
+}
+
+function Configure {
+    [System.Environment]::SetEnvironmentVariable($CargoHomeEnvName, $CargoHomeEnvValue, 'Machine')
 }

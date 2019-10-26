@@ -8,4 +8,5 @@ function Configure {
 
     npm config set msvs_version 2015
     npm config set python C:\Python27\python.exe
+    npm config set prefix D:\work\.npm-cache
 }
