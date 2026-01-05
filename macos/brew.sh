@@ -2,7 +2,7 @@
 
 # Install brew
 if ! hash "brew" 2>/dev/null; then
-	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 # Make sure we’re using the latest Homebrew.
@@ -27,14 +27,28 @@ if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
 fi;
 
 # Install packages
-brew install python
-brew install nano
-brew install htop
-brew install yarn
-brew install exa
 brew install bat
-brew install loop
+brew install colima
+brew install docker docker-buildx docker-completion docker-compose
+brew install git
+brew install htop
+brew install bottom
+brew install micro
+brew install nano
+brew install zed
 brew install tree
+brew install visual-studio-code
+brew install volta
+brew install bitwarden
+brew install iterm2
+brew install macfuse
+brew install dbeaver-community
+brew install rectangle
+brew install microsoft-edge
+brew install spotify
+brew install xmind
+brew install zoom
+brew install telegram
 
 # Remove outdated versions from the cellar.
 brew cleanup

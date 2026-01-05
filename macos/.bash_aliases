@@ -2,12 +2,14 @@
 
 # Aliases
 alias wd="cd ~/Documents"
-alias wg="cd ~/Documents/GitHub"
-alias wo="cd ~/Documents/OpenSource"
+alias wa="cd ~/Documents/arcadia/portal"
+alias wat="cd ~/Documents/arcadia/portal/testpalm"
+alias watb="cd ~/Documents/arcadia/portal/testpalm/services/api.next"
+alias watf="cd ~/Documents/arcadia/portal/testpalm/services/www.next"
+alias wal="cd ~/Documents/arcadia/portal/load"
 alias wt="cd ~/Documents/Texts"
-alias wts="cd ~/Documents/Tests"
-alias ws="cd ~/Documents/Sandbox"
-alias gti="git $1"
+alias wo="cd ~/Documents/OpenSource"
+alias wj="cd ~/Documents/Junk"
 
 # Easier navigation: .., ... and ~
 alias ..="cd .."

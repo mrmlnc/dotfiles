@@ -1,0 +1,10 @@
+[alias]
+	st = status -sb
+	co = checkout
+	cob = checkout -b
+	cp = cherry-pick
+
+	undo = reset HEAD~1 --soft
+
+[core]
+	editor = micro

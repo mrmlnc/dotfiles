@@ -1,8 +1,7 @@
 {
 	// Editor (font) settings
-	"editor.fontFamily": "Consolas",
-	"editor.fontSize": 14,
-	"editor.lineHeight": 32,
+	"editor.fontSize": 16,
+	"editor.lineHeight": 30,
 	// Editor settings
 	"editor.rulers": [
 		80,
@@ -15,8 +14,10 @@
 	},
 	"editor.showUnused": false,
 	"editor.colorDecorators": false,
-	"editor.formatOnType": true,
+	"editor.formatOnSave": false,
+	"editor.formatOnType": false,
 	"editor.snippetSuggestions": "inline",
+	"editor.suggestSelection": "first",
 	"editor.cursorBlinking": "phase",
 	"editor.cursorStyle": "underline",
 	"editor.renderWhitespace": "all",
@@ -25,23 +26,31 @@
 	"editor.stablePeek": false,
 	"editor.minimap.enabled": false,
 	"editor.dragAndDrop": false,
+	"editor.codeLens": false,
+	"editor.largeFileOptimizations": false,
+	"editor.tabSize": 1,
+	"editor.guides.bracketPairs": true,
+	"editor.unicodeHighlight.ambiguousCharacters": false,
+	"editor.experimental.asyncTokenization": true,
+	// diffEdirtor settings
+	"diffEditor.ignoreTrimWhitespace": false,
+	"diffEditor.hideUnchangedRegions.enabled": true,
 	// Workbench settings
 	"workbench.editor.swipeToNavigate": true,
 	"workbench.editor.labelFormat": "short",
+	"workbench.startupEditor": "welcomePage",
 	"workbench.iconTheme": "vs-nomo-dark",
-	"workbench.colorCustomizations": {
-		"statusBar.background": "#466991"
-	},
 	// Window settings
 	"window.title": "${activeEditorMedium}${separator}${rootName}",
 	// Files settings
+	"files.eol": "\n",
 	"files.exclude": {
 		"**/.git": true,
 		"**/.svn": true,
 		"**/.hg": true,
 		"**/CVS": true,
 		"**/.DS_Store": true,
-		"**/node_modules": true
+		"**/node_modules": false
 	},
 	"files.associations": {
 		"*.log": "log",
@@ -50,10 +59,10 @@
 	"files.trimTrailingWhitespace": true,
 	"files.insertFinalNewline": true,
 	"files.hotExit": "off",
-	"files.useExperimentalFileWatcher": true,
 	// File Explorer settings
 	"explorer.autoReveal": false,
 	"explorer.decorations.colors": false,
+	"explorer.fileNesting.enabled": true,
 	// Search settings
 	"search.useIgnoreFiles": true,
 	"search.exclude": {
@@ -86,8 +95,14 @@
 	// TypeScript settings
 	"typescript.disableAutomaticTypeAcquisition": true,
 	"typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+	"typescript.suggest.completeJSDocs": false,
+	"typescript.suggest.jsdoc.generateReturns": false,
 	// JavaScript settings
 	"javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+	"javascript.suggest.completeJSDocs": false,
+	"javascript.suggest.jsdoc.generateReturns": false,
 	// Terminal settings
 	"terminal.external.osxExec": "iTerm.app",
 	// Intergated Terminal settings
@@ -103,16 +118,42 @@
 	"[python]": {
 		"editor.detectIndentation": false
 	},
+	"[go]": {
+		"editor.formatOnSave": false
+	},
+	"[sql]": {
+		"editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+	},
 	// Git
 	"git.enabled": true,
+	"git.enableSmartCommit": true,
 	// Gulp settings
 	"gulp.autoDetect": "off",
-	// Python extension
-	"python.autoComplete.extraPaths": [
-		"/Users/mrmlnc/Documents/Sandbox/sandbox"
-	],
+	// python extension
 	"python.linting.pylintEnabled": false,
 	"python.linting.flake8Enabled": true,
+	"python.analysis.memory.keepLibraryAst": true,
+	"python.analysis.memory.keepLibraryLocalVariables": true,
+	"python.analysis.logLevel": "Information",
+	"python.analysis.autoSearchPaths": true,
+	"python.analysis.useLibraryCodeForTypes": true,
+	"python.languageServer": "Pylance",
+	"python.analysis.extraPaths": [
+		"/Users/mrmlnc/Documents/arcadia/portal"
+	],
+	"python.autoComplete.extraPaths": [
+		"/Users/mrmlnc/Documents/arcadia/portal"
+	],
+	// go extension
+	"go.formatTool": "gofmt",
+	"go.buildOnSave": "off",
+	"go.useLanguageServer": true,
+	"go.lintOnSave": "file",
+	// powershell extension
+	"powershell.integratedConsole.showOnStartup": false,
+	"powershell.codeFormatting.autoCorrectAliases": true,
+	"powershell.codeFormatting.useCorrectCasing": true,
+	"powershell.integratedConsole.suppressStartupBanner": true,
 	// ESLint extension
 	"eslint.run": "onSave",
 	"eslint.validate": [
@@ -120,15 +161,13 @@
 		"javascriptreact",
 		"typescript"
 	],
-	// TSLint extension
-	"tslint.run": "onSave",
 	// Postfix TS/JS
 	"postfix.customTemplates": [
 		// Console
 		{
 			"name": "dir",
-			"description": "console.dir(expr, { colors: true });",
-			"body": "console.dir({{expr}}, { colors: true });",
+			"description": "console.dir(expr, { colors: true, compact: false, depth: 2 });",
+			"body": "console.dir({{expr}}, { colors: true, compact: false, depth: 2 });",
 			"when": [
 				"expression",
 				"identifier",
@@ -136,21 +175,29 @@
 			]
 		}
 	],
-	"workbench.startupEditor": "welcomePage",
-	"cSpell.minWordLength": 2,
+	// cSpell extension
+	"cSpell.minWordLength": 3,
 	"cSpell.spellCheckDelayMs": 500,
 	"cSpell.language": "en,ru",
 	"cSpell.userWords": [
-		"nodelib",
-		"groupable",
 		"execa",
+		"groupable",
 		"ipc",
-		"tsc",
+		"nodelib",
 		"quantile",
-		"stdev"
+		"stdev",
+		"tsc",
+		"проактивной",
+		"пулл-реквесте",
+		"стендапах",
+		"стендапов",
+		"стендапом",
+		"Стендапы",
+		"тестинге",
+		"фичи",
+		"фронтенда",
+		"пререквизит"
 	],
-	"window.zoomLevel": 0,
-	"diffEditor.renderSideBySide": true,
-	"editor.lightbulb.enabled": false,
-	"python.jediEnabled": false
+	// Docker extension
+	"docker.extension.enableComposeLanguageServer": false
 }

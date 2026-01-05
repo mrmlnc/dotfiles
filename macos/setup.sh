@@ -22,6 +22,7 @@ CONFIGS=(
 	".bash_powerline" \
 	".editorconfig" \
 	".gitconfig" \
+	".arcconfig" \
 	".gitignore" \
 	".inputrc"
 )
@@ -63,10 +64,6 @@ unset file
 
 git config --global user.name "$GIT_USER"
 git config --global user.email "$GIT_EMAIL"
-
-echo
-echo "${YELLOW}Install applications...${NC}"
-source $BASEDIR/cask.sh
 
 echo
 echo "${YELLOW}Install some installers...${NC}"

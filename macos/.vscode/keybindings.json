@@ -7,12 +7,12 @@
 
 	// Suggestions
 	{
-		"key": "alt+space",
+		"key": "alt+enter",
 		"command": "editor.action.triggerSuggest",
 		"when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
 	},
 	{
-		"key": "alt+space",
+		"key": "alt+enter",
 		"command": "toggleSuggestionDetails",
 		"when": "editorTextFocus && suggestWidgetVisible"
 	},

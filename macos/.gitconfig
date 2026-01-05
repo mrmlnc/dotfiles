@@ -6,6 +6,8 @@
 	editor = code --wait
 	autocrlf = input
 	ignoreCase = false
+	longpaths = true
+	symlinks = true
 
 [help]
 	autocorrect = 1
